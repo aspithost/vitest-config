@@ -2,6 +2,7 @@
 # @abelspithost/vitest-config
 
 [![Quality gate status](https://sonarcloud.io/api/project_badges/measure?project=aspithost_vitest-config&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=aspithost_vitest-config)
+![NPM Version](https://img.shields.io/npm/v/@abelspithost/vitest-config)
 
 This package provides a shared Vitest configuration for TypeScript projects.
 The `createVitestConfig` function returns a Node-oriented Vitest configuration

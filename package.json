@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/vitest-config",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Shared Vitest configuration preset for TypeScript projects",
   "keywords": [
     "vitest",
@@ -47,12 +47,12 @@
   },
   "devDependencies": {
     "@abelspithost/commitlint": "^0.1.7",
-    "@abelspithost/eslint-config-ts": "^1.1.5",
+    "@abelspithost/eslint-config-ts": "^2.0.0",
     "@abelspithost/tsconfig-node": "^0.1.1",
     "@commitlint/cli": "^21.2.3",
     "@types/node": "^24.13.5",
     "commitlint": "^21.2.2",
-    "eslint": "^10.10.0",
+    "eslint": "^10.11.0",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
     "rimraf": "^6.1.3",
