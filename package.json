@@ -40,7 +40,7 @@
     "lint": "eslint . && npm run publint",
     "publint": "npx -y publint",
     "typecheck": "tsc -p tsconfig.build.json --noEmit",
-    "prepare": "husky"
+    "prepare": "husky || true"
   },
   "peerDependencies": {
     "vitest": ">=5.0.0"
