@@ -12,7 +12,7 @@ export function createVitestConfig() {
       clearMocks: true,
 
       coverage: {
-        reporter: ['json-summary', 'json'],
+        reporter: ['json-summary', 'json', 'lcov'],
         reportOnFailure: true,
         exclude: ['**/constants/**'],
         thresholds: {
