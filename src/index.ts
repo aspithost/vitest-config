@@ -1,4 +1,5 @@
 import { join } from 'node:path';
+
 import { defineConfig } from 'vitest/config';
 
 export function createVitestConfig() {
@@ -12,7 +13,11 @@ export function createVitestConfig() {
       clearMocks: true,
 
       coverage: {
-        reporter: ['json-summary', 'json', 'lcov'],
+        reporter: [
+          'json-summary',
+          'json',
+          'lcov',
+        ],
         reportOnFailure: true,
         exclude: ['**/constants/**'],
         thresholds: {
@@ -25,7 +30,7 @@ export function createVitestConfig() {
       environment: 'node',
 
       include: ['**/*.spec.ts'],
-      exclude: ['dist','node_modules'],
+      exclude: ['dist', 'node_modules'],
 
       globals: true,
 
