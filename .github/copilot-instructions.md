@@ -1,6 +1,6 @@
 # Copilot Instructions
 
-This TypeScript library follows these rules for code, comments, and commit messages.
+This TypeScript library follows these rules for code, comments, and commit messages. Test files also follow the [Vitest instructions](./instructions/vitest.instructions.md).
 
 ## Shared presets
 
@@ -13,7 +13,7 @@ Every project extends these `@abelspithost` presets. Never duplicate their setti
 
 ## TypeScript
 
-- Never use type assertions: `as`, `<Type>value`, or `!`.
+- Never use type assertions: `as`, `<Type>value`, or `!`. Only test files may cast, under the rules in the [Vitest instructions](./instructions/vitest.instructions.md).
 - Type uncertain values as `unknown`, never `any`. Narrow them with type guards, control flow, or `zod` parsing. Fix the underlying type instead of asserting around it.
 - Prefer named functions over anonymous functions.
 - Never suggest `@ts-ignore` or `@ts-expect-error` unless the user asks.
