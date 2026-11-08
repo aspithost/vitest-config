@@ -1,6 +1,6 @@
 {
   "name": "@abelspithost/vitest-config",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Shared Vitest configuration preset for TypeScript projects",
   "keywords": [
     "vitest",
@@ -29,7 +29,7 @@
     "dist"
   ],
   "engines": {
-    "node": ">=24"
+    "node": ">=26"
   },
   "scripts": {
     "build": "npm run clean && tsc -p tsconfig.build.json && npm run deps:check",
@@ -46,17 +46,17 @@
     "vitest": ">=5.0.0"
   },
   "devDependencies": {
-    "@abelspithost/commitlint": "^0.1.9",
-    "@abelspithost/eslint-config-ts": "^3.0.0",
-    "@abelspithost/tsconfig-node": "^0.1.1",
-    "@commitlint/cli": "^21.2.3",
-    "@types/node": "^24.19.1",
-    "commitlint": "^21.2.3",
-    "eslint": "^10.12.0",
+    "@abelspithost/commitlint": "^0.2.0",
+    "@abelspithost/eslint-config-ts": "^3.2.0",
+    "@abelspithost/tsconfig-node": "^0.1.2",
+    "@commitlint/cli": "^21.2.4",
+    "@types/node": "^26.6.6",
+    "commitlint": "^21.2.4",
+    "eslint": "^10.14.0",
     "husky": "^9.1.7",
     "jiti": "^2.7.0",
-    "rimraf": "^6.1.3",
+    "rimraf": "^6.1.4",
     "typescript": "^6.0.3",
-    "vitest": "^5.0.3"
+    "vitest": "^5.1.0"
   }
 }

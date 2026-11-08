@@ -11,7 +11,7 @@ aliases.
 
 ## Requirements
 
-- Node.js 24 or newer
+- Node.js 26 or newer
 - Vitest 5.0.0 or newer
 
 ## Installation
@@ -35,6 +35,22 @@ export default createVitestConfig();
 The configuration resolves the `@` alias to your project's `src` directory.
 For example, `@/utils/format` resolves to `src/utils/format`.
 
+Pass a Vitest configuration object to customize the defaults:
+
+```ts
+export default createVitestConfig({
+  test: {
+    pool: 'forks',
+    globals: false,
+  },
+});
+```
+
+The function merges your options with the preset using Vite's `mergeConfig`.
+Nested objects merge, consumer values override scalar defaults, and arrays
+concatenate. For example, a custom `test.include` pattern adds to the default
+`**/*.spec.ts` pattern rather than replacing it.
+
 ## Defaults
 
 `createVitestConfig` applies these settings:
@@ -47,7 +63,7 @@ For example, `@/utils/format` resolves to `src/utils/format`.
 | Globals | Enabled |
 | Pool | `threads` |
 | Mock clearing | Enabled |
-| Coverage reporters | `json-summary`, `json` |
+| Coverage reporters | `json-summary`, `json`, `lcov` |
 | Coverage on failure | Enabled |
 | Coverage exclusion | `**/constants/**` |
 | Branch threshold | 90% |
