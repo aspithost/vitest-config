@@ -1,9 +1,19 @@
 import { join } from 'node:path';
 
-import { defineConfig } from 'vitest/config';
+import {
+  type ViteUserConfig, defineConfig, mergeConfig,
+} from 'vitest/config';
 
-export function createVitestConfig() {
-  return defineConfig({
+/**
+ * Creates a Vitest configuration with shared test and coverage defaults.
+ *
+ * @param overrides - Consumer configuration that takes precedence over defaults
+ * @returns A configuration that resolves `@` to the project's `src` directory
+ * and sets the test environment, discovery patterns, mock handling, and
+ * coverage thresholds.
+ */
+export function createVitestConfig(overrides: ViteUserConfig = {}): ViteUserConfig {
+  const defaultConfig = defineConfig({
     resolve: {
       alias: {
         '@': join(process.cwd(), './src'),
@@ -37,4 +47,6 @@ export function createVitestConfig() {
       pool: 'threads',
     },
   });
+
+  return mergeConfig(defaultConfig, overrides);
 }
