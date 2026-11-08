@@ -1,5 +1,18 @@
 I created this changelog with [@abelspithost/conventional-commits-changelog](https://github.com/aspithost/conventional-commits-changelog)
 
+## 0.2.1 (2026-11-09)
+
+### :rotating_light: Tests
+
+* add unit tests for createVitestConfig ([209265b](https://github.com/aspithost/vitest-config/commit/209265b65834a9111c1236b8b89721098789455d))
+* adds unit tests. updates tsconfig files ([beb405e](https://github.com/aspithost/vitest-config/commit/beb405e8ae41f318468016dc46cf4a3ccb712101))
+
+### :books: Documentation
+
+* adds badges to readme ([802e497](https://github.com/aspithost/vitest-config/commit/802e4977f583904a1d8271fee7607d443569ed3d))
+* adds changelog ([19128c1](https://github.com/aspithost/vitest-config/commit/19128c153481ce7bd93b7777d58d45ade11d2a4a))
+* adds copilot instructions ([cee75e4](https://github.com/aspithost/vitest-config/commit/cee75e4a0eb1033db9d2305a52db38916d45e975))
+
 ## 0.2.0 (2026-11-08)
 
 ### :sparkles: Features
