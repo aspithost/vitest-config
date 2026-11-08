@@ -7,7 +7,7 @@ import {
 /**
  * Creates a Vitest configuration with shared test and coverage defaults.
  *
- * @param overrides - Consumer configuration that takes precedence over defaults
+ * @param overrides - Vitest options to merge with the preset defaults
  * @returns A configuration that resolves `@` to the project's `src` directory
  * and sets the test environment, discovery patterns, mock handling, and
  * coverage thresholds.
