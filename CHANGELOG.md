@@ -1,5 +1,7 @@
 I created this changelog with [@abelspithost/conventional-commits-changelog](https://github.com/aspithost/conventional-commits-changelog)
 
+## 0.2.2 (2026-11-22)
+
 ## 0.2.1 (2026-11-09)
 
 ### :rotating_light: Tests
